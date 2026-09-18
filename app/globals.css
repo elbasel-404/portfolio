@@ -29,6 +29,14 @@ body {
     animation: fade-in 6s;
   }
 
+  .slideInFromRight {
+    animation: slideInFromRight 1s;
+  }
+
+  .slideInFromBottom {
+    animation: slideInFromBottom 1s;
+  }
+
   .bounce {
     animation-name: bounce;
     animation-duration: 3s;
@@ -41,6 +49,24 @@ body {
 }
 
 /*! Animations */
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100vw);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(100vh);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
 @keyframes fade-in {
   0% {
     opacity: 0;

@@ -4,6 +4,7 @@ import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Inter } from "next/font/google";
 import "../globals.css";
+import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,6 +24,12 @@ const RootLayout = ({ children }: RootLayoutProps) => {
         {children}
         {/* <Analytics /> */}
         {/* <SpeedInsights /> */}
+
+        <Script
+          strategy="beforeInteractive"
+          src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"
+          // onReady={() => sleep(1).then(() => setThreeReady(true))}
+        />
       </body>
     </html>
   );

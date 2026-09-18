@@ -6,7 +6,7 @@ import { twMerge } from "tailwind-merge";
 import { sleep } from "@app/utils";
 
 export const Dots = () => {
-  const [threeReady, setThreeReady] = useState(false);
+  const [threeReady, setThreeReady] = useState(true);
   const [vantaReady, setVantaReady] = useState(false);
   const [bgHidden, setBgHidden] = useState(true);
 
@@ -43,7 +43,7 @@ export const Dots = () => {
       if (!vantaEffect) return;
       vantaEffect.destroy();
     };
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [threeReady, vantaReady]);
 
   return (
@@ -52,13 +52,13 @@ export const Dots = () => {
         id="dotsElem"
         className={twMerge(
           "duration-2000 -z-10 absolute inset-0 h-screen w-screen",
-          bgHidden && "opacity-0"
+          bgHidden && "opacity-0",
         )}
       ></div>
-      <Script
+      {/* <Script
         src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"
         onReady={() => sleep(1).then(() => setThreeReady(true))}
-      />
+      /> */}
       <Script
         src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.dots.min.js"
         onReady={() => sleep(1).then(() => setVantaReady(true))}

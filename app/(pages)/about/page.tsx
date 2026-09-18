@@ -1,24 +1,18 @@
-import Link from "next/link";
-import { FaDownload } from "react-icons/fa6";
-import {
-  Dots,
-  HomeButton,
-  SidebarNav,
-  SlideInFromBottom,
-} from "@app/components";
+// import Link from "next/link";
+// import { FaDownload } from "react-icons/fa6";
+import { Dots, SidebarNav, SlideInFromBottom } from "@app/components";
 import {
   ABoutPageMainTitle,
   AboutPageDownArrow,
   AboutPageSection,
   AboutPageTitle,
-  Bio,
+  // Bio,
   Technologies,
 } from "@app/components/AboutPage";
 
 const AboutPage = () => {
   return (
     <SlideInFromBottom>
-      <HomeButton />
       <SidebarNav />
       <Dots />
       <main className="h-[100dvh] overflow-y-auto snap-y scroll-smooth snap-mandatory app-scrollbar">

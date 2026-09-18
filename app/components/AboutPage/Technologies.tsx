@@ -12,7 +12,7 @@ export const Technologies = () => {
             Logo={tech.icon}
             title={tech.title}
             slideFrom="right"
-            animDuration={(index + 2) * 1000}
+            animDuration={1 + (index + 0.5) * 1000}
             className={tech.className}
             key={tech.title}
           />
@@ -26,7 +26,7 @@ export const Technologies = () => {
               Logo={tech.icon}
               title={tech.title}
               slideFrom="left"
-              animDuration={(index + 2) * 1000}
+              animDuration={1 + (index + 0.5) * 1000}
               className={tech.className}
               key={tech.title}
             />

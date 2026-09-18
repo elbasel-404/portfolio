@@ -1,4 +1,4 @@
-import { Birds, HomeButton, Topology } from "@app/components";
+import { Birds, SidebarNav } from "@app/components";
 import { Pacifico } from "next/font/google";
 import { twMerge } from "tailwind-merge";
 
@@ -9,13 +9,13 @@ const pacifico = Pacifico({
 const ProjectsPage = () => {
   return (
     <main className="h-[100dvh] flex items-center justify-center">
-      {/* <Birds /> */}
-      <Topology />
-      <HomeButton />
+      <Birds />
+      {/* <Topology /> */}
+      <SidebarNav />
       <h1
         className={twMerge(
           "md:text-9xl text-4xl text-purple-600 md:underline text-center",
-          pacifico.className
+          pacifico.className,
         )}
       >
         Under Construction
