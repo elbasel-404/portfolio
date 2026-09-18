@@ -22,9 +22,9 @@ export const SlideInFromBottom = ({
     <div className="h-[100dvh] overflow-hidden">
       <div
         className={twMerge(
-          "transition-transform h-[100dvh] duration-3000 translate-y-1000",
+          "transition-transform h-[100dvh] duration-1000 translate-y-1000",
           className,
-          transition
+          transition,
         )}
       >
         {children}
