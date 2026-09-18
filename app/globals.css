@@ -10,8 +10,15 @@ body {
 
 @layer utilities {
   .neonText {
-    text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #800000,
-      0 0 82px #800000, 0 0 92px #800000, 0 0 102px #800000, 0 0 151px #800000;
+    text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px #800000,
+      0 0 82px #800000,
+      0 0 92px #800000,
+      0 0 102px #800000,
+      0 0 151px #800000;
   }
 
   .app-scrollbar {

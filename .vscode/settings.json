@@ -1,16 +1,17 @@
 {
-    "cSpell.words": [
-        "abcdefghijklmnopqrstuvwzyz",
-        "Abdelrahman",
-        "Archlinux",
-        "Concentrix",
-        "Elbasel",
-        "Nextjs",
-        "numpy",
-        "Scandiweb",
-        "streamlit",
-        "Tailwindcss",
-        "Teleperformance",
-        "Vanta"
-    ]
+  "cSpell.words": [
+    "abcdefghijklmnopqrstuvwzyz",
+    "Abdelrahman",
+    "Archlinux",
+    "Concentrix",
+    "Elbasel",
+    "Nextjs",
+    "numpy",
+    "Scandiweb",
+    "streamlit",
+    "Tailwindcss",
+    "Teleperformance",
+    "Vanta"
+  ],
+  "js/ts.tsdk.path": "node_modules/typescript/lib"
 }

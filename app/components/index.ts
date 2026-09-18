@@ -13,6 +13,7 @@ import { HomeButton } from "./HomeButton";
 import { Rings } from "./Rings";
 import { Birds } from "./Birds";
 import { Topology } from "./Topology";
+import { SidebarNav } from "./SidebarNav";
 
 export {
   Topology,
@@ -30,4 +31,5 @@ export {
   SlideInFromLeft,
   Dots,
   Globe,
+  SidebarNav,
 };
